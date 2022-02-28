@@ -33,7 +33,17 @@
     ================================================*/  
     <div id="sidebar">
     <h1>leaflet-sidebar</h1>
-</div>    
+    </div>    
+        
+    var sidebar = L.control.sidebar('sidebar', {
+        position: 'left'
+    });
+
+    map.addControl(sidebar);
+        
+        setTimeout(function () {
+    sidebar.show();
+}, 500);
         
     /*==============================================
                Her styres rammen om legend
