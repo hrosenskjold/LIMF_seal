@@ -48,6 +48,9 @@
 
 <body>
     <div id="map"></div>
+    
+     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="../src/L.Control.Sidebar.js"></script>
 </body>
 
 </html>
@@ -260,7 +263,9 @@ legend.addTo(map);
       /*==============================================
                Sidebar
     ================================================*/  
-var sidebar = L.control.sidebar('sidebar', {
+
+        
+        var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
             position: 'left'
         });
